@@ -1,25 +1,108 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="i8e-En-2u5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Длина-->
+        <scene sceneID="xF6-H5-j8h">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <viewController title="Длина" id="zSb-f3-v2l" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jzq-Ou-8xf">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Длина" id="Kln-Rh-yYO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2kz-vO-L3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-5374" y="1277"/>
+        </scene>
+        <!--Масса-->
+        <scene sceneID="wLF-L5-qYr">
+            <objects>
+                <viewController title="Масса" id="L6K-YH-Xce" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sp4-TK-p0t">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Масса" id="fu1-LF-UGI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57m-IA-SDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6208" y="1277"/>
+        </scene>
+        <!--Объём-->
+        <scene sceneID="0pC-qj-Oqb">
+            <objects>
+                <viewController title="Объём" id="9M9-P5-hh4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jsf-7t-MLB">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Объём" id="bwW-EG-kCj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZTp-MC-ycL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7037" y="1277"/>
+        </scene>
+        <!--Температура-->
+        <scene sceneID="S3z-Z7-NZa">
+            <objects>
+                <viewController title="Температура" id="cNe-tg-AHe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hLP-OK-YrU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Температура" id="FwJ-30-boS"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFD-xY-IZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7864" y="1277"/>
+        </scene>
+        <!--Скорость-->
+        <scene sceneID="xNO-m5-KHF">
+            <objects>
+                <viewController title="Скорость" id="3XZ-Cr-w90" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="viB-as-Bxi">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Скорость" id="dMi-Dz-wUP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4G-Mq-1c0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8676" y="1277"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oAV-G8-kfv">
+            <objects>
+                <tabBarController id="i8e-En-2u5" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="zLN-kd-Iuq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zSb-f3-v2l" kind="relationship" relationship="viewControllers" id="lmq-mV-eLP"/>
+                        <segue destination="L6K-YH-Xce" kind="relationship" relationship="viewControllers" id="gLm-ny-ENp"/>
+                        <segue destination="cNe-tg-AHe" kind="relationship" relationship="viewControllers" id="tcz-9Z-RY2"/>
+                        <segue destination="3XZ-Cr-w90" kind="relationship" relationship="viewControllers" id="hVY-a8-7u7"/>
+                        <segue destination="9M9-P5-hh4" kind="relationship" relationship="viewControllers" id="ePt-VW-ekK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezV-7t-VmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7060" y="-435"/>
         </scene>
     </scenes>
 </document>
