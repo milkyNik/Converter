@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Длина" id="Kln-Rh-yYO"/>
+                    <tabBarItem key="tabBarItem" title="Длина" image="length.png" id="Kln-Rh-yYO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kz-vO-L3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -30,7 +30,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Масса" id="fu1-LF-UGI"/>
+                    <tabBarItem key="tabBarItem" title="Масса" image="weight.png" id="fu1-LF-UGI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="57m-IA-SDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,7 +45,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Объём" id="bwW-EG-kCj"/>
+                    <tabBarItem key="tabBarItem" title="Объём" image="volume.png" id="bwW-EG-kCj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTp-MC-ycL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -61,7 +61,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Температура" id="FwJ-30-boS"/>
+                    <tabBarItem key="tabBarItem" title="Температура" image="temperature.png" id="FwJ-30-boS"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFD-xY-IZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Скорость" id="dMi-Dz-wUP"/>
+                    <tabBarItem key="tabBarItem" title="Скорость" image="speed.png" id="dMi-Dz-wUP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G4G-Mq-1c0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,4 +105,11 @@
             <point key="canvasLocation" x="-7060" y="-435"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="length.png" width="29" height="29"/>
+        <image name="speed.png" width="29" height="29"/>
+        <image name="temperature.png" width="29" height="29"/>
+        <image name="volume.png" width="29" height="29"/>
+        <image name="weight.png" width="29" height="29"/>
+    </resources>
 </document>
