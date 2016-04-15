@@ -12,6 +12,15 @@
                     <view key="view" contentMode="scaleToFill" id="Jzq-Ou-8xf">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hiz-u7-HCE">
+                                <rect key="frame" x="363" y="501" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Длина" image="length.png" id="Kln-Rh-yYO"/>
@@ -19,7 +28,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kz-vO-L3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5374" y="1277"/>
+            <point key="canvasLocation" x="-5394" y="1289"/>
         </scene>
         <!--Масса-->
         <scene sceneID="wLF-L5-qYr">
@@ -34,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="57m-IA-SDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6208" y="1277"/>
+            <point key="canvasLocation" x="-6228" y="1289"/>
         </scene>
         <!--Объём-->
         <scene sceneID="0pC-qj-Oqb">
@@ -50,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTp-MC-ycL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7037" y="1277"/>
+            <point key="canvasLocation" x="-7057" y="1289"/>
         </scene>
         <!--Температура-->
         <scene sceneID="S3z-Z7-NZa">
@@ -66,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFD-xY-IZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7864" y="1277"/>
+            <point key="canvasLocation" x="-7884" y="1289"/>
         </scene>
         <!--Скорость-->
         <scene sceneID="xNO-m5-KHF">
@@ -81,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G4G-Mq-1c0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8676" y="1277"/>
+            <point key="canvasLocation" x="-8696" y="1289"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oAV-G8-kfv">
