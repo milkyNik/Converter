@@ -18,7 +18,7 @@
 		886BBFAC1CC100F3006A475C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886BBFAB1CC100F3006A475C /* Assets.xcassets */; };
 		886BBFAF1CC100F3006A475C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886BBFAD1CC100F3006A475C /* LaunchScreen.storyboard */; };
 		888C8E0E1CC2260600C49D31 /* LengthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C8E0D1CC2260600C49D31 /* LengthViewController.m */; };
-		888C8E131CC2BC5B00C49D31 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C8E121CC2BC5B00C49D31 /* TestClass.m */; };
+		888C8E131CC2BC5B00C49D31 /* LenghtConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C8E121CC2BC5B00C49D31 /* LenghtConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +37,8 @@
 		886BBFB01CC100F3006A475C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		888C8E0C1CC2260600C49D31 /* LengthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LengthViewController.h; sourceTree = "<group>"; };
 		888C8E0D1CC2260600C49D31 /* LengthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LengthViewController.m; sourceTree = "<group>"; };
-		888C8E111CC2BC5B00C49D31 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
-		888C8E121CC2BC5B00C49D31 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		888C8E111CC2BC5B00C49D31 /* LengthConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LengthConverter.h; sourceTree = "<group>"; };
+		888C8E121CC2BC5B00C49D31 /* LenghtConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LenghtConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +84,8 @@
 		886BBF9E1CC100F3006A475C /* Coverter */ = {
 			isa = PBXGroup;
 			children = (
-				888C8E111CC2BC5B00C49D31 /* TestClass.h */,
-				888C8E121CC2BC5B00C49D31 /* TestClass.m */,
+				888C8E111CC2BC5B00C49D31 /* LengthConverter.h */,
+				888C8E121CC2BC5B00C49D31 /* LenghtConverter.m */,
 				886BBFA21CC100F3006A475C /* AppDelegate.h */,
 				886BBFA31CC100F3006A475C /* AppDelegate.m */,
 				888C8E0C1CC2260600C49D31 /* LengthViewController.h */,
@@ -183,7 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				888C8E131CC2BC5B00C49D31 /* TestClass.m in Sources */,
+				888C8E131CC2BC5B00C49D31 /* LenghtConverter.m in Sources */,
 				888C8E0E1CC2260600C49D31 /* LengthViewController.m in Sources */,
 				886BBFA41CC100F3006A475C /* AppDelegate.m in Sources */,
 				886BBFA11CC100F3006A475C /* main.m in Sources */,

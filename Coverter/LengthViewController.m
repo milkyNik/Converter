@@ -7,7 +7,7 @@
 //
 
 #import "LengthViewController.h"
-#import "TestClass.h"
+#import "LengthConverter.h"
 
 
 // тип числа на экране
@@ -42,7 +42,7 @@ typedef enum {
     self.indicatorNumber = 0.f;
     self.typeNumber = 0;
     
-    TestClass* testConverter = [[TestClass alloc] init];
+    LengthConverter* testConverter = [[LengthConverter alloc] init];
     //self.delegate = testConverter;
     
 }

@@ -6,9 +6,9 @@
 //  Copyright © 2016 MilNik. All rights reserved.
 //
 
-#import "TestClass.h"
+#import "LengthConverter.h"
 
-@implementation TestClass
+@implementation LengthConverter
 
 - (NSString*) returnStringWithType:(ConverterTypeLength) type {
     

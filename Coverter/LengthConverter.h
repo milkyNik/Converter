@@ -11,7 +11,7 @@
 
 @protocol ConverterLengthProtocol;
 
-@interface TestClass : NSObject <ConverterLengthProtocol>
+@interface LengthConverter : NSObject <ConverterLengthProtocol>
 
 // Возвращает строковое имя типа на русском.
 - (NSString*) returnStringWithType:(ConverterTypeLength) type;
