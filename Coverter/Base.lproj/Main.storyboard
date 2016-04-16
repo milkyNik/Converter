@@ -8,7 +8,7 @@
         <!--Длина-->
         <scene sceneID="xF6-H5-j8h">
             <objects>
-                <viewController title="Длина" id="zSb-f3-v2l" sceneMemberID="viewController">
+                <viewController title="Длина" id="zSb-f3-v2l" customClass="LengthViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jzq-Ou-8xf">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PgP-Oa-KqF">
-                                <rect key="frame" x="60" y="80" width="250" height="60"/>
+                                <rect key="frame" x="259" y="56" width="250" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.48627451059999999" green="0.48235294220000002" blue="0.50588238240000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
@@ -29,35 +29,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" id="0M0-vd-SJO">
-                                <rect key="frame" x="458" y="0.0" width="250" height="216"/>
+                                <rect key="frame" x="134" y="124" width="500" height="220"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zSb-f3-v2l" id="eA8-mQ-vGm"/>
+                                    <outlet property="delegate" destination="zSb-f3-v2l" id="wH2-Hb-f2g"/>
+                                </connections>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ycd-US-Lam">
-                                <rect key="frame" x="458" y="310" width="250" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.48627451059999999" green="0.48235294220000002" blue="0.50588238240000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" id="Zv5-gM-Xh2">
-                                <rect key="frame" x="60" y="232" width="250" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nFy-Ra-KhE">
-                                <rect key="frame" x="374" y="208" width="20" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tGB-eb-ryT">
-                                <rect key="frame" x="374" y="322" width="20" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rfA-IU-QIU">
                                 <rect key="frame" x="60" y="456" width="200" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -130,11 +108,35 @@
                                 <color key="backgroundColor" red="0.48627451059999999" green="0.48235294220000002" blue="0.50588238240000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="0"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ycd-US-Lam">
+                                <rect key="frame" x="259" y="352" width="250" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.48627451059999999" green="0.48235294220000002" blue="0.50588238240000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Длина" image="length.png" id="Kln-Rh-yYO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="convertValueLabel" destination="ycd-US-Lam" id="SuV-fN-sHt"/>
+                        <outlet property="valueLabel" destination="PgP-Oa-KqF" id="SZe-9B-3Rn"/>
+                        <outletCollection property="numberButton" destination="rfA-IU-QIU" id="gh4-BY-7Rv"/>
+                        <outletCollection property="numberButton" destination="4tf-sT-v23" id="UE4-Fo-hPd"/>
+                        <outletCollection property="numberButton" destination="WF7-gD-3Yi" id="VEo-ck-5CS"/>
+                        <outletCollection property="numberButton" destination="W5B-ob-bMu" id="T3Y-JF-EWa"/>
+                        <outletCollection property="numberButton" destination="r0B-08-vDr" id="x9p-ep-5IH"/>
+                        <outletCollection property="numberButton" destination="8MY-Uf-csz" id="2EY-71-OAi"/>
+                        <outletCollection property="numberButton" destination="fra-gk-ihv" id="nCL-Zw-9xP"/>
+                        <outletCollection property="numberButton" destination="NPR-nG-Fuz" id="Ygw-DO-KeD"/>
+                        <outletCollection property="numberButton" destination="TM4-va-22x" id="5kZ-uA-02P"/>
+                        <outletCollection property="numberButton" destination="PGj-bk-xQj" id="4r8-Kp-0LD"/>
+                        <outletCollection property="numberButton" destination="stx-kC-MB9" id="JYK-dS-6L9"/>
+                        <outletCollection property="numberButton" destination="2ZP-AE-UcS" id="9GD-cs-WUP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kz-vO-L3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
