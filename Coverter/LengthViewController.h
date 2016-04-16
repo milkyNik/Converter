@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 #pragma mark - ConverterLengthProtocol
+
+
+
+@protocol ConverterLengthProtocol <NSObject>
+
 typedef enum {
     ConverterTypeLengthMM,            //мм
     ConverterTypeLengthCM,            //см
@@ -20,11 +27,6 @@ typedef enum {
     ConverterTypeLengthYard,          //ярд
     ConverterTypeLengthInchesMile     //миля
 } ConverterTypeLength;
-
-@protocol ConverterLengthProtocol <NSObject>
-
-@property (assign, nonatomic) ConverterTypeLength typeLength_1; // Исходный тип.
-@property (assign, nonatomic) ConverterTypeLength typeLength_2; // Тип, в который необходимо конвертировать.
 
 // Возвращает строковое имя типа на русском.
 - (NSString*) returnStringWithType:(ConverterTypeLength) type;

@@ -7,6 +7,8 @@
 //
 
 #import "LengthViewController.h"
+#import "TestClass.h"
+
 
 // тип числа на экране
 typedef enum {
@@ -20,6 +22,9 @@ typedef enum {
 @property (strong, nonatomic) NSMutableString* indicatorString; // строка, которая выводиться на valueLabel
 @property (assign, nonatomic) double indicatorNumber; // число, которое введено на экране
 @property (assign, nonatomic) CalculatorTypeNumber typeNumber; // флаг, для определения дробного числа (введенного с клавиатуры). Нужен для предотвраащения повторного добавления точки!
+
+@property (assign, nonatomic) ConverterTypeLength type_1;
+@property (assign, nonatomic) ConverterTypeLength type_2;
 
 @end
 
@@ -36,6 +41,9 @@ typedef enum {
     self.indicatorString = [[NSMutableString alloc] initWithString:@"0"]; // стандартный ноль на экране калькулятора
     self.indicatorNumber = 0.f;
     self.typeNumber = 0;
+    
+    TestClass* testConverter = [[TestClass alloc] init];
+    //self.delegate = testConverter;
     
 }
 
@@ -74,9 +82,15 @@ typedef enum {
 
 // метод реагирующий на выбор в PickerView
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+
+    if (component == 0) {
+        self.type_1 = row;
+    } else if (component == 2) {
+        self.type_2 = row;
+    }
     
-    
-    
+    [self convert];
+
 }
 
 #pragma mark - Action buttons
@@ -134,6 +148,8 @@ typedef enum {
     
     [self outputOnDisplay];
     
+    [self convert];
+    
 }
 
 - (IBAction)actionAddFractionButton:(UIButton *)sender {
@@ -166,9 +182,20 @@ typedef enum {
     
     [self outputOnDisplay];
     
+    [self convert];
+    
 }
 
 #pragma mark - Additional methods
+
+// конвертирование и вывод на экран
+- (void) convert {
+    
+    double convertValue = [self.delegate convertValue:self.indicatorNumber fromType:self.type_1 inType:self.type_2];
+    
+    self.convertValueLabel.text = [NSString stringWithFormat:@"%f", convertValue];
+    
+}
 
 // вывод на экран
 - (void) outputOnDisplay {
