@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-
 #pragma mark - ConverterLengthProtocol
-
-
 
 @protocol ConverterLengthProtocol <NSObject>
 

@@ -43,7 +43,7 @@ typedef enum {
     self.typeNumber = 0;
     
     LengthConverter* testConverter = [[LengthConverter alloc] init];
-    //self.delegate = testConverter;
+    self.delegate = testConverter;
     
 }
 
