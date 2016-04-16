@@ -87,7 +87,7 @@ typedef enum {
         [self.indicatorString setString:@""];
     }
     
-    if (self.indicatorString.length < 12) {
+    if (self.indicatorString.length < 11) {
         
         NSString* number = [NSString string];
         
@@ -140,7 +140,7 @@ typedef enum {
     
     if (!self.typeNumber) {
         
-        if (self.indicatorString.length < 11) {
+        if (self.indicatorString.length < 10) {
             
             if (sender.tag == 500) {
                 
