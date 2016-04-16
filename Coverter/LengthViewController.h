@@ -40,9 +40,17 @@ typedef enum {
 
 @property (weak, nonatomic) IBOutlet UILabel *valueLabel;
 @property (weak, nonatomic) IBOutlet UILabel *convertValueLabel;
-@property (strong, nonatomic) id <ConverterLengthProtocol> delegate;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *numberButton;
+
+- (IBAction)actionNumberButton:(UIButton *)sender;
+- (IBAction)actionAddFractionButton:(UIButton *)sender;
+- (IBAction)actionAllClearButton:(UIButton *)sender;
+
+
+
+
+
 
 
 @end
