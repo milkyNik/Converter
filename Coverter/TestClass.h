@@ -19,4 +19,6 @@
 // Принимает число, тип этого числа и тип, в который нужно это число конвертировать. Возвращает конвертированное число.
 - (double) convertValue:(double) value fromType:(ConverterTypeLength) type_1 inType:(ConverterTypeLength) type_2;
 
+
+
 @end
