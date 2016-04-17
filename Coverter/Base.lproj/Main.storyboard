@@ -238,7 +238,7 @@
         <!--Масса-->
         <scene sceneID="H33-E5-DJg">
             <objects>
-                <viewController title="Масса" id="UX9-53-yiG" customClass="LengthViewController" sceneMemberID="viewController">
+                <viewController title="Масса" id="UX9-53-yiG" customClass="WeightViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vuf-wg-LK6">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

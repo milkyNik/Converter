@@ -9,25 +9,6 @@
 #import "LengthViewController.h"
 #import "LengthConverter.h"
 
-
-// тип числа на экране
-typedef enum {
-    CalculatorTypeNumberInteger,
-    CalculatorTypeNumberFraction
-} CalculatorTypeNumber;
-
-@interface LengthViewController()
-
-@property (strong, nonatomic) id <ConverterLengthProtocol> delegate;
-@property (strong, nonatomic) NSMutableString* indicatorString; // строка, которая выводиться на valueLabel
-@property (assign, nonatomic) double indicatorNumber; // число, которое введено на экране
-@property (assign, nonatomic) CalculatorTypeNumber typeNumber; // флаг, для определения дробного числа (введенного с клавиатуры). Нужен для предотвраащения повторного добавления точки!
-
-@property (assign, nonatomic) ConverterTypeLength inputTypeLength;
-@property (assign, nonatomic) ConverterTypeLength outputTypeLength;
-
-@end
-
 @implementation LengthViewController
 
 - (void)viewDidLoad {
@@ -45,7 +26,7 @@ typedef enum {
     self.typeNumber = 0;
     
     LengthConverter* testConverter = [[LengthConverter alloc] init];
-    self.delegate = testConverter;
+    self.lengthDelegate = testConverter;
     
 }
 
@@ -76,7 +57,7 @@ typedef enum {
         return @"B";
     }
     
-    return [self.delegate returnStringWithType:row];
+    return [self.lengthDelegate returnStringWithType:row];
     
 }
 
@@ -195,7 +176,7 @@ typedef enum {
     
     NSLog(@"%f",self.indicatorNumber);
     
-    double convertValue = [self.delegate convertValue:self.indicatorNumber fromType:self.inputTypeLength inType:self.outputTypeLength];
+    double convertValue = [self.lengthDelegate convertValue:self.indicatorNumber fromType:self.inputTypeLength inType:self.outputTypeLength];
     
     self.convertValueLabel.text = [NSString stringWithFormat:@"%.11g", convertValue];
     

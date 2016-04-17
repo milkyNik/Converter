@@ -33,6 +33,11 @@ typedef enum {
 
 @end
 
+// тип числа на экране
+typedef enum {
+    CalculatorTypeNumberInteger,
+    CalculatorTypeNumberFraction
+} CalculatorTypeNumber;
 
 
 @interface LengthViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
@@ -47,7 +52,13 @@ typedef enum {
 - (IBAction)actionAllClearButton:(UIButton *)sender;
 
 
+@property (strong, nonatomic) id <ConverterLengthProtocol> lengthDelegate;
+@property (strong, nonatomic) NSMutableString* indicatorString; // строка, которая выводиться на valueLabel
+@property (assign, nonatomic) double indicatorNumber; // число, которое введено на экране
+@property (assign, nonatomic) CalculatorTypeNumber typeNumber; // флаг, для определения дробного числа (введенного с клавиатуры). Нужен для предотвраащения повторного добавления точки!
 
+@property (assign, nonatomic) ConverterTypeLength inputTypeLength;
+@property (assign, nonatomic) ConverterTypeLength outputTypeLength;
 
 
 

@@ -20,6 +20,7 @@
 		888C8E0E1CC2260600C49D31 /* LengthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C8E0D1CC2260600C49D31 /* LengthViewController.m */; };
 		888C8E131CC2BC5B00C49D31 /* LenghtConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C8E121CC2BC5B00C49D31 /* LenghtConverter.m */; };
 		888C8E161CC3F20400C49D31 /* WeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C8E151CC3F20400C49D31 /* WeightViewController.m */; };
+		888C8E1B1CC40D1400C49D31 /* WeightConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C8E1A1CC40D1400C49D31 /* WeightConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		888C8E121CC2BC5B00C49D31 /* LenghtConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LenghtConverter.m; sourceTree = "<group>"; };
 		888C8E141CC3F20400C49D31 /* WeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightViewController.h; sourceTree = "<group>"; };
 		888C8E151CC3F20400C49D31 /* WeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightViewController.m; sourceTree = "<group>"; };
+		888C8E191CC40D1400C49D31 /* WeightConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightConverter.h; sourceTree = "<group>"; };
+		888C8E1A1CC40D1400C49D31 /* WeightConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 			children = (
 				888C8E111CC2BC5B00C49D31 /* LengthConverter.h */,
 				888C8E121CC2BC5B00C49D31 /* LenghtConverter.m */,
+				888C8E191CC40D1400C49D31 /* WeightConverter.h */,
+				888C8E1A1CC40D1400C49D31 /* WeightConverter.m */,
 			);
 			name = ConverterClasses;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888C8E1B1CC40D1400C49D31 /* WeightConverter.m in Sources */,
 				888C8E131CC2BC5B00C49D31 /* LenghtConverter.m in Sources */,
 				888C8E0E1CC2260600C49D31 /* LengthViewController.m in Sources */,
 				886BBFA41CC100F3006A475C /* AppDelegate.m in Sources */,

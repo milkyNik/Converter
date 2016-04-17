@@ -12,7 +12,7 @@
 
 - (NSString*) returnStringWithType:(ConverterTypeLength) type {
     
-    return @"test";
+    return @"Length";
     
 }
 
