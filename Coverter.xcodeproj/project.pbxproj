@@ -19,6 +19,7 @@
 		886BBFAF1CC100F3006A475C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886BBFAD1CC100F3006A475C /* LaunchScreen.storyboard */; };
 		888C8E0E1CC2260600C49D31 /* LengthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C8E0D1CC2260600C49D31 /* LengthViewController.m */; };
 		888C8E131CC2BC5B00C49D31 /* LenghtConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C8E121CC2BC5B00C49D31 /* LenghtConverter.m */; };
+		888C8E161CC3F20400C49D31 /* WeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C8E151CC3F20400C49D31 /* WeightViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		888C8E0D1CC2260600C49D31 /* LengthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LengthViewController.m; sourceTree = "<group>"; };
 		888C8E111CC2BC5B00C49D31 /* LengthConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LengthConverter.h; sourceTree = "<group>"; };
 		888C8E121CC2BC5B00C49D31 /* LenghtConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LenghtConverter.m; sourceTree = "<group>"; };
+		888C8E141CC3F20400C49D31 /* WeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightViewController.h; sourceTree = "<group>"; };
+		888C8E151CC3F20400C49D31 /* WeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +87,10 @@
 		886BBF9E1CC100F3006A475C /* Coverter */ = {
 			isa = PBXGroup;
 			children = (
-				888C8E111CC2BC5B00C49D31 /* LengthConverter.h */,
-				888C8E121CC2BC5B00C49D31 /* LenghtConverter.m */,
+				888C8E181CC3F23100C49D31 /* ConverterClasses */,
 				886BBFA21CC100F3006A475C /* AppDelegate.h */,
 				886BBFA31CC100F3006A475C /* AppDelegate.m */,
-				888C8E0C1CC2260600C49D31 /* LengthViewController.h */,
-				888C8E0D1CC2260600C49D31 /* LengthViewController.m */,
+				888C8E171CC3F20E00C49D31 /* ViewControllers */,
 				886BBFA81CC100F3006A475C /* Main.storyboard */,
 				886BBFAB1CC100F3006A475C /* Assets.xcassets */,
 				886BBFAD1CC100F3006A475C /* LaunchScreen.storyboard */,
@@ -105,6 +106,26 @@
 				886BBFA01CC100F3006A475C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		888C8E171CC3F20E00C49D31 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				888C8E0C1CC2260600C49D31 /* LengthViewController.h */,
+				888C8E0D1CC2260600C49D31 /* LengthViewController.m */,
+				888C8E141CC3F20400C49D31 /* WeightViewController.h */,
+				888C8E151CC3F20400C49D31 /* WeightViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		888C8E181CC3F23100C49D31 /* ConverterClasses */ = {
+			isa = PBXGroup;
+			children = (
+				888C8E111CC2BC5B00C49D31 /* LengthConverter.h */,
+				888C8E121CC2BC5B00C49D31 /* LenghtConverter.m */,
+			);
+			name = ConverterClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +207,7 @@
 				888C8E131CC2BC5B00C49D31 /* LenghtConverter.m in Sources */,
 				888C8E0E1CC2260600C49D31 /* LengthViewController.m in Sources */,
 				886BBFA41CC100F3006A475C /* AppDelegate.m in Sources */,
+				888C8E161CC3F20400C49D31 /* WeightViewController.m in Sources */,
 				886BBFA11CC100F3006A475C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

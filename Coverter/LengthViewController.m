@@ -23,8 +23,8 @@ typedef enum {
 @property (assign, nonatomic) double indicatorNumber; // число, которое введено на экране
 @property (assign, nonatomic) CalculatorTypeNumber typeNumber; // флаг, для определения дробного числа (введенного с клавиатуры). Нужен для предотвраащения повторного добавления точки!
 
-@property (assign, nonatomic) ConverterTypeLength type_1;
-@property (assign, nonatomic) ConverterTypeLength type_2;
+@property (assign, nonatomic) ConverterTypeLength inputTypeLength;
+@property (assign, nonatomic) ConverterTypeLength outputTypeLength;
 
 @end
 
@@ -36,6 +36,8 @@ typedef enum {
     
     for (UIButton* button in self.numberButton) {
         button.layer.cornerRadius = 10.f;
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        button.titleLabel.font = [UIFont systemFontOfSize:30.f];
     }
     
     self.indicatorString = [[NSMutableString alloc] initWithString:@"0"]; // стандартный ноль на экране калькулятора
@@ -84,9 +86,9 @@ typedef enum {
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 
     if (component == 0) {
-        self.type_1 = row;
+        self.inputTypeLength = row;
     } else if (component == 2) {
-        self.type_2 = row;
+        self.outputTypeLength = row;
     }
     
     [self convert];
@@ -191,9 +193,11 @@ typedef enum {
 // конвертирование и вывод на экран
 - (void) convert {
     
-    double convertValue = [self.delegate convertValue:self.indicatorNumber fromType:self.type_1 inType:self.type_2];
+    NSLog(@"%f",self.indicatorNumber);
     
-    self.convertValueLabel.text = [NSString stringWithFormat:@"%f", convertValue];
+    double convertValue = [self.delegate convertValue:self.indicatorNumber fromType:self.inputTypeLength inType:self.outputTypeLength];
+    
+    self.convertValueLabel.text = [NSString stringWithFormat:@"%.11g", convertValue];
     
 }
 
